@@ -54,11 +54,7 @@ jobs:
           branch: gh-pages
           folder: dist
           clean: true
-
-  syncToGitee:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
+          
       - name: 同步Gitee
         uses: wearerequired/git-mirror-action@master
         env:
