@@ -7,6 +7,7 @@ import SkillStack from "../side/SkillStack.svelte";
 // import Education from "../main/Education.svelte";
 import Work from "../main/Work.svelte";
 import Project from "../main/Project.svelte";
+import RightAside from "../side/RightAside.svelte";
 
 import "../assets/css/typo.css";
 import "../assets/css/font-awesome.min.css";
@@ -146,6 +147,17 @@ const evaluations = [
   `“多静多思考，反省不张扬”是我给自己总结的“十字箴言”，“活到老，学到老”是我的人生目标`,
 ];
 
+const rightAside: RightAside[] = [
+  {
+    link: 'https://github.com/mi-saka10032/personal-resume',
+    label: '源代码'
+  },
+  {
+    link: 'https://mi-sa-ka10032.gitee.io/frontend-service-station/',
+    label: 'Document'
+  }
+]
+
 // footer
 const date = new Date();
 const year = date.getFullYear();
@@ -234,18 +246,6 @@ const day = date.getDate();
     </footer>
 
     <!-- 侧栏 -->
-    <aside>
-      <ul>
-        <li>
-          <a href="https://gitee.com/itsay/resume" target="_blank">源代码</a>
-        </li>
-        <li>
-          <a
-            href="https://mi-sa-ka10032.gitee.io/frontend-service-station/"
-            target="_blank">Document</a
-          >
-        </li>
-      </ul>
-    </aside>
+    <RightAside rightAside={rightAside} />
   </body>
 </html>

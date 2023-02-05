@@ -19,3 +19,8 @@ type Project = Work & {
   background: string;
   result: string;
 };
+
+type RightAside = {
+  link: string;
+  label: string;
+};
