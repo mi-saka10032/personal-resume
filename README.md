@@ -1,10 +1,5 @@
-# Astro + Svelte Example
+# 个人简历
 
-```
-npm create astro@latest -- --template framework-svelte
-```
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/framework-svelte)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/s/github/withastro/astro/tree/latest/examples/framework-svelte)
-
-This example showcases Astro working with [Svelte](https://svelte.dev/).1
+- 这是一份基于Astro静态框架编写的个人简历
+- HTML和CSS借鉴于https://gitee.com/itsay/resume
+- `.github/workflows/deploy.yml`提供github-pages自动部署、gitee仓库同步部署
