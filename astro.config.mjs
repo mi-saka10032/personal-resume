@@ -5,7 +5,5 @@ import svelte from "@astrojs/svelte";
 export default defineConfig({
   // Enable Svelte to support Svelte components.
   integrations: [svelte()],
-  // github-pages
-  site: "https://mi-saka10032.github.io",
-  base: "/",
+  base: "/personal-resume",
 });

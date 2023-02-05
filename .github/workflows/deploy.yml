@@ -44,7 +44,7 @@ jobs:
           pnpm run build
           > dist/.nojekyll
 
-      - name: Deploy to GitHub Pages
+      - name: 部署文档
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           token: ${{ secrets.ACCESS_TOKEN }}
@@ -54,7 +54,7 @@ jobs:
           branch: gh-pages
           folder: dist
           clean: true
-          
+
       - name: 同步Gitee
         uses: wearerequired/git-mirror-action@master
         env:
@@ -62,9 +62,9 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.GITEE_RSA_PRIVATE_KEY }}
         with:
           # 注意替换为你的 GitHub 源仓库地址
-          source-repo: git@github.com:mi-saka10032/frontend-service-station.git
+          source-repo: git@github.com:mi-saka10032/personal-resume.git
           # 注意替换为你的 Gitee 目标仓库地址
-          destination-repo: git@gitee.com:mi-sa-ka10032/frontend-service-station.git
+          destination-repo: git@gitee.com:mi-sa-ka10032/personal-resume.git
 
       - name: 部署Gitee Pages
         uses: yanglbme/gitee-pages-action@main
@@ -74,6 +74,6 @@ jobs:
           #注意在 Settings->Secrets 配置 GITEE_PASSWORD
           gitee-password: ${{ secrets.GITEE_PASSWORD }}
           #注意替换为你的 Gitee 仓库，仓库名严格区分大小写，请准确填写，否则会出错
-          gitee-repo: frontend-service-station
+          gitee-repo: personal-resume
           #要部署的分支，默认是 master，若是其他分支，则需要指定（指定的分支必须存在）
           branch: gh-pages
