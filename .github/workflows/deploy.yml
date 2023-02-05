@@ -23,17 +23,6 @@ jobs:
       - name: Install, build, and upload your site
         uses: withastro/action@v0
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v1
-      
       - name: 同步Gitee
         uses: wearerequired/git-mirror-action@master
         env:
@@ -44,8 +33,7 @@ jobs:
           source-repo: git@github.com:mi-saka10032/personal-resume.git
           # 注意替换为你的 Gitee 目标仓库地址
           destination-repo: git@gitee.com:mi-sa-ka10032/personal-resume.git
-      
-      - name: 部署Gitee Pages
+            - name: 部署Gitee Pages
         uses: yanglbme/gitee-pages-action@main
         with:
           #注意替换为你的 Gitee 用户名
@@ -56,3 +44,14 @@ jobs:
           gitee-repo: personal-resume
           #要部署的分支，默认是 master，若是其他分支，则需要指定（指定的分支必须存在）
           branch: main
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
