@@ -55,7 +55,7 @@ jobs:
           folder: dist
           clean: true
 
-  syncToGitee
+  syncToGitee:
     needs: build
     runs-on: ubuntu-latest
     steps:
