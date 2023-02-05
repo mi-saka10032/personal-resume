@@ -7,5 +7,5 @@ export default defineConfig({
   integrations: [svelte()],
   // github-pages
   site: "https://mi-saka10032.github.io",
-  // base: "/personal-resume",
+  base: "/",
 });
