@@ -50,7 +50,7 @@ const skillStack: string[] = [
   "熟悉Vue和React的运行机制与原理",
   "熟悉Webpack、Vite等构建工具的运行机制与性能优化",
   "熟悉Git分支管理、GitFlow执行",
-  "了解Midway(NodeJs)后端项目开发",
+  "了解Midway(NodeJs)后端项目开发，了解Java语法与SpringMVC结构",
   "了解跨端开发、服务端渲染、微前端应用等",
 ];
 
@@ -105,7 +105,7 @@ const projects: Project[] = [
     skill: "Node+TypeScript+EJS",
     background: "实现一款基于Vite，个人定制化依赖的项目模板生成工具",
     result:
-      "cmd指令窗口支持Vue版本(Vue2/Vue3)、预编译css、UI库等可选项，可动态生成项目模板并自带各种高阶定制依赖",
+      "cmd指令窗口支持Vue版本(Vue2/Vue3)、预编译css、UI库等可选项，可动态生成项目模板并自带各种定制依赖",
   },
   {
     title: "[项目2]Vite+Element模板框架",
