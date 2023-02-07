@@ -15,6 +15,7 @@ type Work = {
 
 type Project = Work & {
   demoLink?: string;
+  demoName?: string;
   skill: string;
   background: string;
   result: string;

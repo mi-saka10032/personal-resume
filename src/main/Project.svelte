@@ -14,7 +14,7 @@
           <span>{item.title}</span>
           {#if item.demoLink}
             <span class="link">
-              <a href={item.demoLink} target="_blank">Demo</a>
+              <a href={item.demoLink} target="_blank">{item.demoName || 'Demo'}</a>
             </span>
           {/if}
           <time>{item.startTime}-{item.endTime}</time>
