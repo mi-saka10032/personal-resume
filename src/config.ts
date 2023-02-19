@@ -20,7 +20,7 @@ const baseInfo: Info[] = [
 
 // 联系方式
 const contacts: Contact[] = [
-  { label: "手机", value: "135-6877-5642", link: false },
+  { label: "手机", value: "***-****-***", link: false },
   { label: "邮箱", value: "misaka10032@aliyun.com", link: false },
   {
     label: "个人技术笔记",
