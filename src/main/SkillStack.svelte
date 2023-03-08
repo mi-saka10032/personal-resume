@@ -7,10 +7,16 @@
   <hr />
   <ul>
     {#each skillStack as item}
-    <li>
+    <li class="skill">
       <div>{item}</div>
       <div class="divider"></div>
     </li>
     {/each}
   </ul>
 </div>
+
+<style>
+.stack.info-unit .skill {
+  margin-bottom: 0.25rem;
+}
+</style>

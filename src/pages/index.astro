@@ -3,7 +3,7 @@ import Avatar from "../side/Avatar.svelte";
 import BaseInfo from "../side/BaseInfo.svelte";
 import Contact from "../side/Contact.svelte";
 import SkillPoint from "../side/SkillPoint.svelte";
-import SkillStack from "../side/SkillStack.svelte";
+import SkillStack from "../main/SkillStack.svelte";
 // import Education from "../main/Education.svelte";
 import Work from "../main/Work.svelte";
 import Project from "../main/Project.svelte";
@@ -77,14 +77,14 @@ const {
           <h2><i class="fa fa-qrcode" aria-hidden="true"></i>二维码</h2>
           <hr />
         </section> -->
-
-        <!-- 技术栈 -->
-        <SkillStack skillStack={skillStack} />
       </section>
 
       <section class="main">
         <!-- 教育经历 -->
         <!-- <Education /> -->
+
+        <!-- 技术栈 -->
+        <SkillStack skillStack={skillStack} />
 
         <!-- 工作经历 -->
         <Work workInfo={workInfo} />

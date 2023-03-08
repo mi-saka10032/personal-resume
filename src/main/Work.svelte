@@ -17,7 +17,7 @@
         <ul class="info-content">
           {#each item.desc as htmlText}
             {#if typeof htmlText === "string"}
-              <li>{@html htmlText}</li>
+              <li class="normal_li">{@html htmlText}</li>
             {:else if Array.isArray(htmlText)}
               <ul>
                 {#each htmlText as innerText}
@@ -31,3 +31,9 @@
     {/each}
   </ul>
 </section>
+
+<style>
+.work.info-unit .normal_li {
+  list-style-type: square;
+}
+</style>
