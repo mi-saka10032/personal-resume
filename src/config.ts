@@ -5,7 +5,7 @@ const title = "[简历]余志航-前端开发工程师";
 const avatar = {
   name: "余志航",
   info: "前端开发工程师 / 成都",
-  src: "./misaka10032.jpg",
+  src: "./misaka10032.png",
 };
 
 // 基本信息
