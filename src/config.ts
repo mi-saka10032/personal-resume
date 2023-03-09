@@ -5,7 +5,7 @@ const title = "[简历]余志航-前端开发工程师";
 const avatar = {
   name: "余志航",
   info: "前端开发工程师 / 成都",
-  src: "./misaka10032.png",
+  src: "./misaka10032.jpg",
 };
 
 // 基本信息
@@ -54,10 +54,11 @@ const skillStack: string[] = [
   "熟练掌握Vue2和Vue3项目结构，熟悉Vue项目开发规范，熟练掌握组件封装",
   "熟悉React的语法与项目开发",
   "熟悉Vue（响应式原理、依赖收集、diff算法、编译运行与更新）和React（JSX、Fiber、WorkInProgress、diff算法）的运行机制与原理",
-  "熟悉Webpack、Rollup、Vite等构建工具的运行机制与性能优化",
+  "熟悉Webpack、Rollup、Vite等构建工具的运行机制与性能优化、前端性能优化",
   "熟悉Git分支管理、GitFlow执行、应用Devops、Nginx部署等",
   "了解Midway(NodeJs)后端项目开发，了解Java语法与SpringMVC结构",
   "了解跨端开发（Electron）、服务端渲染、微前端应用等",
+  "具备从0到1设计、规划、分配、协调及开发完整前端项目的经验",
 ];
 
 // 工作经历
@@ -75,7 +76,7 @@ const workInfo: Work[] = [
   {
     title: "欧冶云商股份有限公司成都研发部 - 中级前端开发工程师",
     startTime: "2021.11",
-    endTime: "2023.03",
+    endTime: "至今",
     desc: [
       `参与公司钢铁知识管理首页的前端开发`,
       [
@@ -110,7 +111,7 @@ const workInfo: Work[] = [
 // 个人开源项目
 const projects: Project[] = [
   {
-    title: "[项目1]风景区首页网站",
+    title: "[个人前端项目]风景区首页网站",
     demoLink: "https://gitee.com/mask9527/tourist-resort",
     demoName: "repo链接",
     startTime: "2022.04",
@@ -120,7 +121,7 @@ const projects: Project[] = [
     result: `网站提供首页活动展示、风景区列表与详情显示、评论发布与回复等内容。特色：使用Fabric完成网站需要的刺绣图片DIY（拖拽、上色、切换背景等）功能`,
   },
   {
-    title: "[项目2]Vite+Vue脚手架工具",
+    title: "[npm脚手架]Vite+Vue脚手架工具",
     demoLink: "https://www.npmjs.com/package/vite-vue-build",
     demoName: "npm链接",
     startTime: "2022.05",
@@ -130,7 +131,7 @@ const projects: Project[] = [
     result: `cmd指令窗口支持Vue版本(Vue2/Vue3)、预编译css、UI库等可选项，可动态生成项目模板并自带各种定制依赖`,
   },
   {
-    title: "[项目3]Vite+Element模板框架",
+    title: "[框架模板]Vite+Element模板框架",
     demoLink: "https://gitee.com/mi-sa-ka10032/vite-element-admin",
     demoName: "repo链接",
     startTime: "2022.05",
@@ -140,7 +141,7 @@ const projects: Project[] = [
     result: `将模板框架从VueCli移植到Vite上，解决了大量CJS与ES6的差异性问题，可作为加快开发速度的替代「Vue-Element-Admin」框架`,
   },
   {
-    title: "[项目4]公司组件代码生成器",
+    title: "[可视化代码生成器]公司组件代码生成器",
     demoLink:
       "https://github.com/mi-saka10032/SHGT-Component-CodeGenerator/releases",
     demoName: "release链接",
