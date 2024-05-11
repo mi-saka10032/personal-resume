@@ -3,14 +3,14 @@ const title = "[简历]余志航-前端开发工程师";
 
 // 个人信息
 const avatar = {
-  name: "misaka10032",
+  name: "余志航",
   info: "前端开发工程师 / 成都",
   src: "./misaka10032.png",
 };
 
 // 基本信息
 const baseInfo: Info[] = [
-  { label: "个人信息", value: "misaka10032" },
+  { label: "个人信息", value: "余志航 / 男 / 26岁" },
   { label: "工作经验", value: "2.5年" },
   { label: "工作状态", value: "在职" },
   { label: "毕业院校", value: "兰州交通大学" },
@@ -21,8 +21,8 @@ const baseInfo: Info[] = [
 
 // 联系方式
 const contacts: Contact[] = [
-  { label: "手机", value: "***********", link: false },
-  { label: "邮箱", value: "***********", link: false },
+  { label: "手机", value: "135-6877-5642", link: false },
+  { label: "邮箱", value: "misaka10032@aliyun.com", link: false },
   {
     label: "个人技术笔记",
     value: "https://mi-sa-ka10032.gitee.io/frontend-service-station/",
@@ -64,7 +64,7 @@ const skillStack: string[] = [
 // 工作经历
 const workInfo: Work[] = [
   {
-    title: "************** - 初级前端开发工程师",
+    title: "成都互联汇智有限公司 - 初级前端开发工程师",
     startTime: "2020.09",
     endTime: "2021.09",
     desc: [
@@ -74,7 +74,7 @@ const workInfo: Work[] = [
     ],
   },
   {
-    title: "************** - 中级前端开发工程师",
+    title: "欧冶云商股份有限公司成都研发部 - 中级前端开发工程师",
     startTime: "2021.11",
     endTime: "至今",
     desc: [
